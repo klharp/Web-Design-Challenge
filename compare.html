@@ -45,14 +45,14 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="active " href="index.html">Home</a></li>
-          <li><a href="visualize.html">Visualize</a></li>
+          <li><a href="data.html">Data</a></li>
          <!-- <li><a href="services.html">Services</a></li>-->
           <li><a href="compare.html">Compare</a></li>
          <!-- <li><a href="team.html">Team</a></li>
           <li><a href="blog.html">Blog</a></li>-->
-          <li class="dropdown"><a href="#"><span>Data</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Plots</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Temperature</a></li>
+              <li><a href="visualization/temperature.html">Temperature</a></li>
               <!--<li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -62,9 +62,9 @@
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li> -->
-              <li><a href="#">Humidity</a></li>
-              <li><a href="#">Cloud Cover</a></li>
-              <li><a href="#">Wind Speed</a></li>
+              <li><a href="visualization/humidity.html">Humidity</a></li>
+              <li><a href="visualization/cloudcover.html">Cloud Cover</a></li>
+              <li><a href="visualization/windspeed.html">Wind Speed</a></li>
             </ul>
           </li>
          <!-- <li><a href="contact.html">Contact Us</a></li> -->
@@ -77,7 +77,7 @@
 
   <main id="main">
 
-    <!-- ======= Our Portfolio Section ======= -->
+    <!-- ======= Our Portfolio Section ======= 
     <section class="breadcrumbs">
       <div class="container">
 
@@ -90,7 +90,7 @@
         </div>
 
       </div>
-    </section><!-- End Our Portfolio Section -->
+    </section> End Our Portfolio Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section class="portfolio">
@@ -100,131 +100,68 @@
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-temp">Temperature</li>
+              <li data-filter=".filter-humid">Humidity</li>
+              <li data-filter=".filter-cloud">Cloud Cover</li>
+              <li data-filter=".filter-wind">Wind Speed</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+          <div class="col-lg-3 col-md-6 portfolio-wrap filter-temp">
             <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/LatTemp.png" class="img-fluid" alt="LatTemp" width="temperature">
               <div class="portfolio-info">
-                <h3>App 1</h3>
+                <h3>Temperature</h3>
                 <div>
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/LatTemp.png" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="visualization/temperature.html" title="Temperature"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+          <div class="col-lg-3 col-md-6 portfolio-wrap filter-humid">
             <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/LatHum.png" class="img-fluid" alt="humidity">
               <div class="portfolio-info">
-                <h3>Web 3</h3>
+                <h3>Humidity</h3>
                 <div>
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/LatHum.png" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="visualization/humidity.html" title="Humidity"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+          <div class="col-lg-3 col-md-6 portfolio-wrap filter-cloud">
             <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/LatCloud.png" class="img-fluid" alt="cloud cover">
               <div class="portfolio-info">
-                <h3>App 2</h3>
+                <h3>Cloud Cover</h3>
                 <div>
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/LatCloud.png" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="visualization/cloudcover.html" title="Cloud Cover"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+          <div class="col-lg-3 col-md-6 portfolio-wrap filter-wind">
             <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/LatWind.png" class="img-fluid" alt="wind speed">
               <div class="portfolio-info">
-                <h3>Card 2</h3>
+                <h3>Wind Speed</h3>
                 <div>
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/LatWind.png" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="visualization/windspeed.html" title="Wind Speed"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3>Web 2</h3>
-                <div>
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3>App 3</h3>
-                <div>
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3>Card 1</h3>
-                <div>
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3>Card 3</h3>
-                <div>
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
-            <div class="portfolio-item">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h3>Web 1</h3>
-                <div>
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
         </div>
 
