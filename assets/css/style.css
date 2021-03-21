@@ -1278,7 +1278,7 @@ section {
 }
 
 .portfolio .portfolio-item {
-  background: #1e4356;
+  background: #fffff;
   overflow: hidden;
   min-height: 200px;
   position: relative;
@@ -1302,7 +1302,7 @@ section {
 
 .portfolio .portfolio-item .portfolio-info h3 {
   font-size: 22px;
-  color: #fff;
+  color: #68A4C4;
   font-weight: bold;
 }
 
@@ -1310,10 +1310,11 @@ section {
   color: rgba(255, 255, 255, 0.6);
   font-size: 28px;
   transition: 0.3s;
+  color: #68A4C4; 
 }
 
 .portfolio .portfolio-item .portfolio-info a i:hover {
-  color: white;
+  color: #1e4356;
 }
 
 .portfolio .portfolio-item:hover img {
@@ -2302,4 +2303,15 @@ section {
   color: #a2cce3;
 }
 
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 400px) {  
+    .table-responsive {
+        font-size:10px !important;
+    }
+}
 

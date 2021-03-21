@@ -1,137 +1,130 @@
 # Web Design Homework - Web Visualization Dashboard (Latitude)
 
-## Background
-
-Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
-
-![Images/landingResize.png](Images/landingResize.png)
-
-### Before You Begin
-
-1. Create a new repository for this project called `Web-Design-Challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, add your **html** files, as well as your **assets**, **Resources** and **visualizations** folders. Your `index.html` should be the landing page that the user first sees.
-
-4. Push the above changes to GitHub or GitLab.
-
-5. Deploy to GitHub Pages. 
 
 ## Latitude - Latitude Analysis Dashboard with Attitude
 
-For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting [weather data](Resources/cities.csv).
+This data visualization dashboard website ususeding visualizations previous created in a past assignment. Specifically,  [weather data](Resources/cities_data.csv) was plotted.
 
-In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
 
-### Website Requirements
+## Website Requirements
 
 For reference, see the ["Screenshots" section](#screenshots) below.
 
 The website must consist of 7 pages total, including:
 
-* A [landing page](#landing-page) containing:
+* A [landing page](#landing-page) that contains:
   * An explanation of the project.
   * Links to each visualizations page. There should be a sidebar containing preview images of each plot, and clicking an image should take the user to that visualization.
+
 * Four [visualization pages](#visualization-pages), each with:
   * A descriptive title and heading tag.
   * The plot/visualization itself for the selected comparison.
   * A paragraph describing the plot and its significance.
+  * The ability to navigate between the four pages.
+  * Each of these pages are accessible from the dropdown in the navigation menu.
+
 * A ["Comparisons" page](#comparisons-page) that:
-  * Contains all of the visualizations on the same page so we can easily visually compare them.
-  * Uses a Bootstrap grid for the visualizations.
-    * The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
-* A ["Data" page](#data-page) that:
-  * Displays a responsive table containing the data used in the visualizations.
-    * The table must be a bootstrap table component. [Hint](https://getbootstrap.com/docs/4.3/content/tables/#responsive-tables)
-    * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. Try using a tool you already know, pandas. Pandas has a nifty method approprately called `to_html` that allows you to generate a HTML table from a pandas dataframe. See the documentation [here](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html)
+  * Contains all of the visualizations on the same page to compare.
+  * Used a Bootstrap grid for the visualizations.
+  * Linked to the individual visualization pages.
+  * Linked to open the graphic in a separate window.
+ 
+* A ["Data" page](#data-page) that displays a responsive table containing the data used in the visualizations.
 
-The website must, at the top of every page, have a navigation menu that:
+* An ["About" page](#about-page) that provides information about Kerry Harp
 
-* Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
-* Contains a dropdown menu on the right of the navbar named "Plots" that provides a link to each individual visualization page.
-* Provides two more text links on the right: "Comparisons," which links to the comparisons page, and "Data," which links to the data page.
-* Is responsive (using media queries). The nav must have similar behavior as the screenshots ["Navigation Menu" section](#navigation-menu) (notice the background color change).
+* A [navigation bar](#navigation-menu) that includes site title and navigation elements, including a drop-down menu.
 
-Finally, the website must be deployed to GitHub pages.
+* A [footer](#footer) that provides information page links and contact information
 
-When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
 
-Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
 
-### Considerations
 
-* You may use the [weather data](Resources/cities.csv) or choose another dataset. Alternatively, you may use the included [cities dataset](Resources/cities.csv) and pull the images from the [assets folder](Resources/assets).
-* You must use Bootstrap. This includes using the Bootstrap `navbar` component for the header on every page, the bootstrap table component for the data page, and the Bootstrap grid for responsiveness on the comparison page.
-* You must deploy your website to GitHub pages, with the website working on a live, publicly accessible URL as a result.
-* Be sure to use a CSS media query for the navigation menu.
-* Be sure your website works at all window widths/sizes.
-* Feel free to take some liberty in the visual aspects, but keep the core functionality the same.
-
-### Bonuses
-
-* Use a different dataset! The requirements above still hold, but make it your own.
-* Use a Bootstrap theme to customize your website. You may use a tool like [Bootswatch](https://bootswatch.com/). Make it look snazzy, give it some attitude. If using this, be sure you also meet all of the requirements listed above.
-* Add extra visualizations! The more comparisons the better, right?
-* Use meaningful glyphicons next to links in the header.
-* Have visualization navigation on every visualizations page with an active state. See the screenshots below.
-
-### Screenshots
+## Screenshots
 
 This section contains screenshots of each page that must be built, at varying screen widths. These are a guide; you can meet the requirements without having the pages look exactly like the below images.
 
-#### <a id="landing-page"></a>Landing page
+### <a id="landing-page"></a>Landing page
 
 Large screen:
 
-![Landing page large screen](Images/landingResize.png)
+![Landing page large screen](Resources/home_large.png)
 
 Small screen:
 
-![Landing page small screen](Images/landing-sm.png)
+![Landing page small screen](Resources/home_small.png)
 ￼
 
-#### <a id="comparisons-page"></a>Comparisons page
+### <a id="comparisons-page"></a>Comparisons page
 
 Large screen:
 
-![comparison page large screen](Images/comparison-lg.png)
+![comparison page large screen](Resources/compare_large.png)
 
 Small screen:
 
-![comparison page small screen](Images/comparison-sm.png)
+![comparison page small screen](Resources/compare_small.png)
 
-#### <a id="data-page"></a>Data page
+### <a id="data-page"></a>Data page
 
 Large screen:
 
-![data page large screen](Images/data-lg.png)
+![data page large screen](Resources/data_large.png)
 
 
 Small screen:
 
-![data page small screen](Images/data-sm.png)
+![data page small screen](Resources/data_small.png)
 
-#### <a id="visualization-pages"></a>Visualization pages
+### <a id="visualization-pages"></a>Visualization pages
 
 You'll build four of these, one for each visualization. Here's an example of one:
 
 Large screen:
 
-![visualize page large screen](Images/visualize-lg.png)
+![temperature page large screen](Resources/temp_large.png)
+
+![humidity page large screen](Resources/humidity_large.png)
+
+![cloudiness page large screen](Resources/cloud_large.png)
+
+![wind page large screen](Resources/wind_large.png)
 
 Small screen:
 
-![visualize page small screen](Images/visualize-sm.png)
+![temperature page small screen](Resources/temp_large.png)
 
-#### <a id="navigation-menu"></a>Navigation menu
+![humidity page small screen](Resources/humidity_small.png)
+
+![cloudiness page small screen](Resources/cloud_small.png)
+
+![wind page small screen](Resources/wind_small.png)
+
+
+### <a id="about-page"></a>About page
 
 Large screen:
-![nav menu large screen](Images/nav-lg.png)
+
+![about page large screen](Resources/about_large.png)
+
 
 Small screen:
-![nav menu small screen](Images/nav-sm.png)
 
-### Copyright
+![about page small screen](Resources/about_small.png)
 
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+### <a id="navigation-menu"></a>Navigation Bar
+
+Large screen:
+![nav menu large screen](Resources/header_large.png)
+
+Small screen:
+![nav menu small screen](Resources/header_small.png)
+
+#### <a id="footer"></a>Footer
+
+Large screen:
+![footer large screen](Resources/footer_large.png)
+
+Small screen:
+![footer small screen](Resources/footer_small.png)
+
