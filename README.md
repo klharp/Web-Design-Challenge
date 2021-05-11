@@ -1,5 +1,9 @@
 # Web Design Homework - Web Visualization Dashboard (Latitude)
 
+---
+
+Site can be viewed on Github pages here: https://klharp.github.io/web-design-challenge/
+
 
 ## Latitude - Latitude Analysis Dashboard with Attitude
 
