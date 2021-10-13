@@ -1,4 +1,4 @@
-#Web Visualization Dashboard (Latitude)
+# Web Visualization Dashboard (Latitude)
 
 ## Project Overview
 This "Latitude with Attitude"  dashboard uses data from a previous assignment (https://github.com/klharp/python-api-challenge). Specifically,  [weather data](Resources/cities_data.csv) was used.
