@@ -1,7 +1,7 @@
 # Web Visualization Dashboard (Latitude)
 
 ## Project Overview
-This "Latitude with Attitude"  dashboard uses data from a previous assignment (https://github.com/klharp/python-api-challenge). Specifically,  [weather data](Resources/cities_data.csv) was used.
+This "Latitude with Attitude"  dashboard uses data from a previous assignment (https://github.com/klharp/Python-API-WeatherPy-VacationPy). Specifically,  [weather data](Resources/cities_data.csv) was used.
 
 Languages and libraries used:
 
@@ -10,7 +10,7 @@ Languages and libraries used:
 
 ---
 
-Site can be viewed on Github pages here: https://klharp.github.io/web-design-challenge/
+Site can be viewed on Github pages here: https://klharp.github.io/Web-Visualization-Dashboard/
 
 
 ## Website Requirements
